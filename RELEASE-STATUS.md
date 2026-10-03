@@ -1,0 +1,1 @@
+MIT approved by Rod. Copyright (c) 2026 DBLSHOT COFFEE PTY LTD. Source publication approved for https://github.com/dblshotlabs/menulink. npm package publication and hosted deployment are separate release steps.

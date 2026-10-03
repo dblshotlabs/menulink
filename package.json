@@ -1,0 +1,35 @@
+{
+  "name": "menulink-source",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "apps/menulink",
+    "packages/menulink"
+  ],
+  "packageManager": "bun@1.3.0",
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "scripts": {
+    "dev": "bun run --cwd apps/menulink dev",
+    "build": "bun run --cwd apps/menulink build",
+    "start": "bun run --cwd apps/menulink start",
+    "test": "bun test",
+    "migrate": "bun run --cwd apps/menulink db:migrate",
+    "owner:create": "bun run --cwd apps/menulink owner:create"
+  },
+  "overrides": {
+    "@hono/node-server": "1.19.13",
+    "defu": "6.1.7",
+    "drizzle-orm": "0.45.2",
+    "esbuild": "0.27.7",
+    "express-rate-limit": "8.5.1",
+    "fast-uri": "3.1.2",
+    "hono": "4.12.18",
+    "ip-address": "10.2.0",
+    "lodash": "4.18.1",
+    "postcss": "8.5.14"
+  }
+}

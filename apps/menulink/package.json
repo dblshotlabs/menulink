@@ -1,0 +1,30 @@
+{
+  "name": "menulink",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3205",
+    "build": "next build",
+    "start": "next start",
+    "db:migrate": "bun scripts/migrate.js",
+    "owner:create": "bun scripts/create-owner.js",
+    "test": "bun test ../../tests/menulink-presentation.test.jsx ../../tests/menulink-runtime.test.js ../../tests/menulink-standalone.test.js"
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "better-auth": "1.6.9",
+    "drizzle-orm": "0.45.2",
+    "postgres": "3.4.9",
+    "lucide-react": "0.577.0",
+    "@dblshotlabs/menulink": "workspace:*"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.0",
+    "tailwindcss": "4.3.0",
+    "postcss": "8.5.14",
+    "drizzle-kit": "0.31.10"
+  },
+  "license": "MIT"
+}

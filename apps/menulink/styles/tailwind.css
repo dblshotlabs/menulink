@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@source "../../../packages/menulink/components";
+:root {
+  --store-page: #fffaf2;
+  --store-surface: #fff;
+  --store-strong: #1d1714;
+  --store-text: #1d1714;
+  --store-muted: #645c55;
+  --store-border: #ded7cf;
+  --store-ring: #2f6f4e;
+  --store-inverse: #fffaf2;
+  --store-inverse-border: #ffffff55;
+  --store-inverse-muted: #e1d9cf;
+}
+body {
+  margin: 0;
+  background: var(--store-page);
+  color: var(--store-text);
+  font-family: system-ui, sans-serif;
+}
+:focus-visible {
+  outline: 2px solid #2f6f4e;
+  outline-offset: 3px;
+}
